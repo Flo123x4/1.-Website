@@ -1,33 +1,73 @@
-body{
- background-color: #081034;   
+:root{
+    --hauptFarbe: rgb(133, 133, 133);
 }
-.teewt{
-  border: white 2px solid;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
+
+body {
+    background-color: #081034;
 }
-.teewt-container{
+
+.teewt {
+    margin: 10px;
+    border: var(--hauptFarbe) 2px solid;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.teewt-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.Profil-teewt{
+
+.Profil-teewt {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: white 2px solid;
-    margin: 20px;
+    border: var(--hauptFarbe) 2px solid;
+    margin: 20px 20px 0 20px;
     padding: 10px;
+    border-radius: 10px;
 }
-.Profil-teewt img{
-    width: 100px;
-    height: 100px;
+
+.Profil-teewt img {
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
 }
-.Profil-teewt a{
+
+.Profil-teewt a {
     color: white;
     font-size: 30px;
     margin-left: 20px;
+}
+
+.teewt-textfeld {
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 22px;
+}
+.eingabeBehaelter{
+    display: flex;justify-content: center;
+    align-items: center;
+
+}
+.eingabeBehaelter textarea{
+    padding-bottom:20px;
+   padding-inline: 190px;
+   background-color:transparent;
+   border: var(--hauptFarbe) 5px solid;
+   border-radius: 10px;
+   resize: none;
+   outline: none;
+   color:white;
+}
+.eingabeBehaelter button{
+    height: 30px;
+    width: 50px;
+    
 }
